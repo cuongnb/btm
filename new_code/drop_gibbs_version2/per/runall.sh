@@ -1,0 +1,41 @@
+#!/usr/bin/env bash 
+taskset -c 0 python per.py twitter tp 0.0 ../output/K100_0_0 100 &
+taskset -c 1 python per.py twitter tp 0.1 ../output/K100_01_0 100 &
+taskset -c 2 python per.py twitter tp 0.2 ../output/K100_02_0 100 &
+taskset -c 3 python per.py twitter tp 0.3 ../output/K100_03_0 100 &
+taskset -c 4 python per.py twitter tp 0.4 ../output/K100_04_0 100 &
+taskset -c 5 python per.py twitter tp 0.5 ../output/K100_05_0 100 &
+taskset -c 6 python per.py twitter tp 0.6 ../output/K100_06_0 100 &
+taskset -c 7 python per.py twitter tp 0.7 ../output/K100_07_0 100 &
+taskset -c 8 python per.py twitter tp 0.8 ../output/K100_08_0 100 &
+taskset -c 9 python per.py twitter tp 0.9 ../output/K100_09_0 100 &
+taskset -c 10 python per.py twitter w 0.1 ../output/K100_01_1 100 &
+taskset -c 11 python per.py twitter w 0.2 ../output/K100_02_1 100 &
+taskset -c 12 python per.py twitter w 0.3 ../output/K100_03_1 100 &
+taskset -c 13 python per.py twitter w 0.4 ../output/K100_04_1 100 &
+taskset -c 14 python per.py twitter w 0.5 ../output/K100_05_1 100 &
+taskset -c 15 python per.py twitter w 0.6 ../output/K100_06_1 100 &
+taskset -c 16 python per.py twitter w 0.7 ../output/K100_07_1 100 &
+taskset -c 17 python per.py twitter w 0.8 ../output/K100_08_1 100 &
+taskset -c 18 python per.py twitter w 0.9 ../output/K100_09_1 100 &
+taskset -c 20 python per.py twitter tp 0.0 ../output/K50_0_0 50 &
+taskset -c 21 python per.py twitter tp 0.1 ../output/K50_01_0 50 &
+taskset -c 22 python per.py twitter tp 0.2 ../output/K50_02_0 50 &
+taskset -c 23 python per.py twitter tp 0.3 ../output/K50_03_0 50 &
+taskset -c 24 python per.py twitter tp 0.4 ../output/K50_04_0 50 &
+taskset -c 25 python per.py twitter tp 0.5 ../output/K50_05_0 50 &
+taskset -c 26 python per.py twitter tp 0.6 ../output/K50_06_0 50 &
+taskset -c 27 python per.py twitter tp 0.7 ../output/K50_07_0 50 &
+taskset -c 28 python per.py twitter tp 0.8 ../output/K50_08_0 50 &
+taskset -c 29 python per.py twitter tp 0.9 ../output/K50_09_0 50 &
+taskset -c 30 python per.py twitter w 0.1 ../output/K50_01_1 100 &
+taskset -c 31 python per.py twitter w 0.2 ../output/K50_02_1 100 &
+taskset -c 32 python per.py twitter w 0.3 ../output/K50_03_1 100 &
+taskset -c 33 python per.py twitter w 0.4 ../output/K50_04_1 100 &
+taskset -c 34 python per.py twitter w 0.5 ../output/K50_05_1 100 &
+taskset -c 35 python per.py twitter w 0.6 ../output/K50_06_1 100 &
+taskset -c 36 python per.py twitter w 0.7 ../output/K50_07_1 100 &
+taskset -c 37 python per.py twitter w 0.8 ../output/K50_08_1 100 &
+taskset -c 38 python per.py twitter w 0.9 ../output/K50_09_1 100 &
+wait
+
